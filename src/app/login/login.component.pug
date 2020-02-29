@@ -1,1 +1,65 @@
-input
+link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
+script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+// ---- Include the above in your HEAD tag --------
+script(src='https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js')
+link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet')
+link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous')
+.container
+  .row
+    .col-md-5.mx-auto
+      #first
+        .myform.form
+          .logo.mb-3
+            .col-md-12.text-center
+              h1 Login
+          form(action='' method='post' name='login')
+            .form-group
+              label(for='exampleInputEmail1') Email address
+              input#email.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='Enter email')
+            .form-group
+              label(for='exampleInputEmail1') Password
+              input#password.form-control(type='password' name='password' aria-describedby='emailHelp' placeholder='Enter Password')
+            .form-group
+              p.text-center
+                | By signing up you accept our 
+                a(href='#') Terms Of Use
+            .col-md-12.text-center
+              button.btn.btn-block.mybtn.btn-primary.tx-tfm(type='submit') Login
+            .col-md-12
+              .login-or
+                hr.hr-or
+                span.span-or or
+            .col-md-12.mb-3
+              p.text-center
+                a.google.btn.mybtn(href='javascript:void();')
+                  i.fa.fa-google-plus
+                  |  Signup using Google
+            .form-group
+              p.text-center
+                | Don&apos;t have account? 
+                a#signup(href='#') Sign up here
+      #second
+        .myform.form
+          .logo.mb-3
+            .col-md-12.text-center
+              h1 Signup
+          form(action='#' name='registration')
+            .form-group
+              label(for='exampleInputEmail1') First Name
+              input#firstname.form-control(type='text' name='firstname' aria-describedby='emailHelp' placeholder='Enter Firstname')
+            .form-group
+              label(for='exampleInputEmail1') Last Name
+              input#lastname.form-control(type='text' name='lastname' aria-describedby='emailHelp' placeholder='Enter Lastname')
+            .form-group
+              label(for='exampleInputEmail1') Email address
+              input#email.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='Enter email')
+            .form-group
+              label(for='exampleInputEmail1') Password
+              input#password.form-control(type='password' name='password' aria-describedby='emailHelp' placeholder='Enter Password')
+            .col-md-12.text-center.mb-3
+              button.btn.btn-block.mybtn.btn-primary.tx-tfm(type='submit') Get Started For Free
+            .col-md-12
+              .form-group
+                p.text-center
+                  a#signin(href='#') Already have an account?
