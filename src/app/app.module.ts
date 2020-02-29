@@ -8,13 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import {MatInputModule,MatFormFieldModule,MatSliderModule ,MatOptionModule, MatSelectModule, MatIconModule} from '@angular/material'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserAnimationsModule,
