@@ -7,7 +7,6 @@ import { AccountSetUpComponent } from './account-set-up/account-set-up.component
 
 const routes: Routes = [
   { path: 'login', component:LoginComponent },
-  {path:'header',component:HeaderComponent},
   {path:'AccountSetUp',component:AccountSetUpComponent}
 ];
 
