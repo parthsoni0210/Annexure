@@ -25,7 +25,8 @@ import { AccountSetUpComponent } from './account-set-up/account-set-up.component
     BrowserModule,
     AppRoutingModule,MatFormFieldModule,
     MatInputModule,FormsModule,
-    ReactiveFormsModule,MatSliderModule 
+    ReactiveFormsModule,MatSliderModule,
+    MatIconModule 
   ],
   exports:[ ],
   providers: [],
