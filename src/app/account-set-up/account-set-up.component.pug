@@ -1,0 +1,100 @@
+div
+  .row
+    .col-sm-12.col-12.col-md-6
+      .jumbotron.text-uppercase 
+        .mx-2 account setup
+          i.fa.fa-chevron-circle-left(style="font-size:25px;float:right")
+      article.card
+        .card-body.p-4
+          // <p class="alert alert-success">Some text success or error</p>
+          form(role='form')
+            .form-group
+              label(for='username') Saved Acoount
+              .input-group
+                input.form-control.mr-1(type='text' name='username' placeholder='4356-xxxx-xxxx ' required='')
+                input.form-control(type='text' name='username' placeholder='Bhavin Rajpura' required='')
+                .input-group-prepend.mr-1
+                  span.input-group-text
+                    i.fa.fa-edit
+                .input-group-prepend
+                  span.input-group-text
+                    i.fa.fa-trash
+              // input-group.//
+            .form-group
+              label(for='username') Full name (on the card)
+              .input-group
+                .input-group-prepend
+                  span.input-group-text
+                    i.fa.fa-user
+                input.form-control(type='text' name='username' placeholder='' required='')
+              // input-group.//
+            // form-group.//
+            .row.form-group
+              .col-8
+                label(for='cardNumber') Card number
+                .input-group
+                  .input-group-prepend
+                    span.input-group-text
+                      i.fa.fa-credit-card
+                  input.form-control(type='text' name='cardNumber' placeholder='')
+              .col-4
+                  label(data-toggle='tooltip' title='' data-original-title='3 digits code on back side of the card')
+                    | CVV 
+                    i.fa.fa-question-circle
+                  input.form-control(required='true' type='text')
+              // input-group.//
+            // form-group.//
+            .row
+              .col-sm-8
+                .form-group
+                  label
+                    span.hidden-xs Expiration
+                  .form-inline
+                    select.form-control(style='width:45%')
+                      option MM
+                      option 01 - Janiary
+                      option 02 - February
+                      option 03 - February
+                    span(style='width:10%; text-align: center')  / 
+                    select.form-control(style='width:45%')
+                      option YY
+                      option 2018
+                      option 2019
+                // form-group.//
+            // row.//
+            .form-group
+              label(for='exampleFormControlTextarea2') Billing Address
+              textarea#exampleFormControlTextarea2.form-control.rounded-0(rows='3')
+            .checkbox
+              label
+                input(type='checkbox' value='')
+                |  Default Payment
+            .row
+              .form-group.col-sm-12.d-flex.justify-content-center
+                button.subscribe.btn.buttonCenter.btn-outline-primary.btn-block.btn-sm.w-25(type='button')
+                  | Save
+            .row
+              .col-sm-6.form-group
+                input.form-control(type='text' name='cardNumber' placeholder='Routing Number')
+              .col-sm-6.form-group
+                input.form-control(type='text' name='cardNumber' placeholder='Account Number')
+            .form-group
+              input.form-control.placeholderCenter(type='text' name='cardNumber' placeholder='Account Name')
+            .checkbox.row
+              .col-sm-6.form-group
+                label
+                  input(type='checkbox' value='')
+                  |  Default Payment
+              .col-sm-6.form-group
+                label
+                  input(type='checkbox' value='')
+                  |  Default Receipt
+            .row
+              .form-group.col-sm-12.d-flex.justify-content-center
+                button.subscribe.btn.buttonCenter.btn-outline-primary.btn-block.btn-sm.w-25(type='button')
+                  | Save
+        // card-body.//
+    // card.//
+    // col.//
+  // row.//
+// container end.//

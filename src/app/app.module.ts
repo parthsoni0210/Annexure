@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule,MatFormFieldModule,MatSliderModule ,MatOptionModule, MatSelectModule, MatIconModule} from '@angular/material'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { AccountSetUpComponent } from './account-set-up/account-set-up.component';
 
 
 
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    AccountSetUpComponent
   ],
   imports: [
     BrowserAnimationsModule,
