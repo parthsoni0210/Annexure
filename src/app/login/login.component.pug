@@ -7,59 +7,33 @@ link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='styleshe
 link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous')
 .container
   .row
-    .col-md-5.mx-auto
+    .col-md-7.mx-auto
       #first
         .myform.form
           .logo.mb-3
             .col-md-12.text-center
-              h1 Login
+              h5 Join now, it's free
+          
+          .btn.alert-light.text-uppercase 
+             strong join with google or facebook
+          br
+          .col-md-12
+              .login-or
+                span.span-or OR
+                hr.hr-or
           form(action='' method='post' name='login')
             .form-group
-              label(for='exampleInputEmail1') Email address
-              input#email.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='Enter email')
+            input#fname.form-control(type='text' name='fname' aria-describedby='fname' placeholder='First name')
             .form-group
-              label(for='exampleInputEmail1') Password
-              input#password.form-control(type='password' name='password' aria-describedby='emailHelp' placeholder='Enter Password')
+            input#lname.form-control(type='text' name='lname' aria-describedby='lname' placeholder='last name')
             .form-group
-              p.text-center
-                | By signing up you accept our 
-                a(href='#') Terms Of Use
+            input#email.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='email')
+            .form-group
+            input#password.form-control(type='password' name='password' aria-describedby='emailHelp' placeholder='Password')
+            .form-group
+
             .col-md-12.text-center
-              button.btn.btn-block.mybtn.btn-primary.tx-tfm(type='submit') Login
-            .col-md-12
-              .login-or
-                hr.hr-or
-                span.span-or or
-            .col-md-12.mb-3
-              p.text-center
-                a.google.btn.mybtn(href='javascript:void();')
-                  i.fa.fa-google-plus
-                  |  Signup using Google
-            .form-group
-              p.text-center
-                | Don&apos;t have account? 
-                a#signup(href='#') Sign up here
-      #second
-        .myform.form
-          .logo.mb-3
-            .col-md-12.text-center
-              h1 Signup
-          form(action='#' name='registration')
-            .form-group
-              label(for='exampleInputEmail1') First Name
-              input#firstname.form-control(type='text' name='firstname' aria-describedby='emailHelp' placeholder='Enter Firstname')
-            .form-group
-              label(for='exampleInputEmail1') Last Name
-              input#lastname.form-control(type='text' name='lastname' aria-describedby='emailHelp' placeholder='Enter Lastname')
-            .form-group
-              label(for='exampleInputEmail1') Email address
-              input#email.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='Enter email')
-            .form-group
-              label(for='exampleInputEmail1') Password
-              input#password.form-control(type='password' name='password' aria-describedby='emailHelp' placeholder='Enter Password')
-            .col-md-12.text-center.mb-3
-              button.btn.btn-block.mybtn.btn-primary.tx-tfm(type='submit') Get Started For Free
-            .col-md-12
-              .form-group
-                p.text-center
-                  a#signin(href='#') Already have an account?
+              button.btn.btn-outline-light.mybtn.btn-sm.tx-tfm((click)='onJoin()') Agree and join
+            br
+            p.text-center(style="font-size:13px;") You agree to MarketSpace LLC's User agreement, 
+              a(href='#' style="color:white;text-decoration:none;") Privacy & Cookie Policy

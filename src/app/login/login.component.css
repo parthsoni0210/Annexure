@@ -2,13 +2,10 @@
 body{
   padding-top:4.2rem;
 padding-bottom:4.2rem;
-background:rgba(0, 0, 0, 0.76);
+background-color: #214264;
   }
   a{
    text-decoration:none !important;
-   }
-   h1,h2,h3{
-   font-family: 'Kaushan Script', cursive;
    }
     .myform{
 position: relative;
@@ -19,42 +16,42 @@ padding: 1rem;
 flex-direction: column;
 width: 100%;
 pointer-events: auto;
-background-color: #fff;
+background-color: #214264;
 background-clip: padding-box;
 border: 1px solid rgba(0,0,0,.2);
 border-radius: 1.1rem;
 outline: 0;
-max-width: 500px;
+max-width: 100%;
 }
    .tx-tfm{
    text-transform:uppercase;
    }
    .mybtn{
-   border-radius:50px;
+    font-size:15px;
+    
    }
   
    .login-or {
    position: relative;
-   color: #aaa;
-   margin-top: 10px;
    margin-bottom: 10px;
-   padding-top: 10px;
    padding-bottom: 10px;
    }
    .span-or {
    display: block;
    position: absolute;
    left: 50%;
-   top: -2px;
+   top: -10px;
    margin-left: -25px;
-   background-color: #fff;
+   color:white;
    width: 50px;
    text-align: center;
+   background-color: #214264;
    }
    .hr-or {
    height: 1px;
    margin-top: 0px !important;
    margin-bottom: 0px !important;
+   border-color:white;
    }
    .google {
    color:#666;
@@ -68,3 +65,28 @@ max-width: 500px;
    color: #ff0000;
    }
    #second{display:none;}
+
+   .container{
+    margin-top:3%;
+    color:white;
+   }
+
+   .alert-light{
+     font-size:15px;
+     text-align: center;
+     color:#214264;
+     margin-top:-10px;
+   }
+
+   input{
+     border-top:0px;
+     border-left:0px;
+     border-right:0px;
+     border-bottom:2px solid white !important;
+     background-color: transparent;
+   }
+
+   input::placeholder{
+     color:white;
+     text-transform: capitalize;
+   }

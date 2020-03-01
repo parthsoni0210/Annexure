@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Header</title>
+
+    <style>
+        /* Style the search field */
+        form.headerSearchBox input[type=text] {
+            padding: 5px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 85%;
+            background: #f1f1f1;
+        }
+
+        /* Style the submit button */
+        form.headerSearchBox button {
+            float: left;
+            width: 15%;
+            padding: 5px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            /* Prevent double borders */
+            cursor: pointer;
+        }
+
+        form.headerSearchBox button:hover {
+            background: #0b7dda;
+        }
+
+        /* Clear floats */
+        form.headerSearchBox::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-2 col-sm-4 col-2">
+                <i class="fa fa-user-circle fa-2x d-flex justify-content-center"></i>
+            </div>
+            <div class="col-md-8 col-sm-4 col-8 ">
+                <form class="headerSearchBox">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="col-md-2 col-sm-4 col-2">
+                <i class="fa fa-comments fa-2x d-flex justify-content-center"></i>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-sm-12 col-md-12 col-12" style="background-color: silver;">
+                <span class="py-5">Bhavin Rajpara</span>
+            </div>
+        </div>
+    </header>
+
+    <footer class="container fixed-bottom">
+        <div class="row d-flex justify-content-around border">
+            <div class="col-md-2 col-sm-2 col-2 p-0">
+                <i class="fa fa-home fa-2x d-flex justify-content-center"></i>
+                <h6 class="text-center">Home</h6>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 p-0">
+                <i class="fa fa-tasks fa-2x d-flex justify-content-center"></i>
+                <h6 class="text-center">My Task</h6>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 p-0">
+                <i class="fa fa-file fa-2x d-flex justify-content-center"></i>
+                <h6 class="text-center">Invoice</h6>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 p-0">
+                <i class="fa fa-plus fa-2x d-flex justify-content-center"></i>
+                <h6 class="text-center">Post</h6>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 p-0">
+                <i class="fa fa-bell fa-2x d-flex justify-content-center"></i>
+                <h6 class="text-center">Notification</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
