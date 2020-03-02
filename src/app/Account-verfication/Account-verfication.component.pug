@@ -1,0 +1,18 @@
+.jumbotron.text-uppercase(style="background-color: #214264;color:white")
+    .mx-2 Account Verification
+      i.fa.fa-chevron-circle-left(style="font-size:25px;float:right" routerLink="/")
+.container
+  .row
+    .col-12
+      .custom-file
+        input#customFile.custom-file-input(type='file')
+        label.custom-file-label(for='customFile') Choose file
+    br
+    br
+    br
+    .col-12
+      select.custom-select(name='cars')
+        option(selected='') Custom Select Menu
+        option(value='volvo') Volvo
+        option(value='fiat') Fiat
+        option(value='audi') Audi

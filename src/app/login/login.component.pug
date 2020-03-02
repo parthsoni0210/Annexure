@@ -1,10 +1,3 @@
-link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet')
-script(src='//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
-script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-// ---- Include the above in your HEAD tag --------
-script(src='https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js')
-link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet')
-link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous')
 .container
   .row
     .col-md-7.mx-auto
@@ -23,17 +16,20 @@ link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesom
                 hr.hr-or
           form(action='' method='post' name='login')
             .form-group
-            input#fname.form-control(type='text' name='fname' aria-describedby='fname' placeholder='First name')
+            input#fname.form-control(#fname type='text' name='fname' aria-describedby='fname' placeholder='First name*')
             .form-group
-            input#lname.form-control(type='text' name='lname' aria-describedby='lname' placeholder='last name')
+            input#lname.form-control(#lname type='text' name='lname' aria-describedby='lname' placeholder='last name*')
             .form-group
-            input#email.form-control(type='email' name='email' aria-describedby='emailHelp' placeholder='email')
+            input#email.form-control(#email type='email' name='email' aria-describedby='emailHelp' placeholder='Email*')
             .form-group
-            input#password.form-control(type='password' name='password' aria-describedby='emailHelp' placeholder='Password')
+            input#password.form-control(#password type='password' name='password' aria-describedby='emailHelp' placeholder='Password*')
             .form-group
+
+            h6.text-danger {{error}}
 
             .col-md-12.text-center
               button.btn.btn-outline-light.mybtn.btn-sm.tx-tfm((click)='onJoin()') Agree and join
             br
             p.text-center(style="font-size:13px;") You agree to MarketSpace LLC's User agreement, 
+              br
               a(href='#' style="color:white;text-decoration:none;") Privacy & Cookie Policy

@@ -85,6 +85,9 @@ max-width: 100%;
      border-bottom:2px solid white !important;
      background-color: transparent;
    }
+   input::content{
+     color:white;
+   }
 
    input::placeholder{
      color:white;

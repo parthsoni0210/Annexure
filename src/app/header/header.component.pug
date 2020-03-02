@@ -1,6 +1,6 @@
 header.container
   .row.d-flex.justify-content-around
-    .col-md-2.col-sm-4.col-2(style="background-color:white;")
+    .col-md-2.col-sm-4.col-2((click)="onLogout()" style="background-color:white;")
       i.fa.fa-user-circle.fa-2x.d-flex.justify-content-center
     .col-md-8.col-sm-4.col-8
       form.headerSearchBox
@@ -11,4 +11,4 @@ header.container
       i.fa.fa-comments.fa-2x.d-flex.justify-content-center
   .row.mt-1
     .col-sm-12.col-md-12.col-12(style='background-color: silver;')
-      span.py-5 Bhavin Rajpara
+      span.py-5.text-capitalize {{userName}}
