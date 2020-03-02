@@ -1,0 +1,45 @@
+.jumbotron.text-uppercase(style="background-color: #214264;color:white")
+  .mx-2 MIKE TAYLOR, Commodity Specialist
+    i.fa.fa-chevron-circle-left(style="font-size:25px;float:right" routerLink="/userManagement")
+.container
+  .mt-2
+    h5 mtaylor@themarketspace.co
+    br
+    .row.container
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#Post.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='Post') Post
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#EditPayment.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='EditPayment') Edit Payment
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#ViewPayment.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='ViewPayment') View Payment
+    br
+    .row.container
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#Verify.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='Verify') Verify Documents
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#AddUsers.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='AddUsers') Add Users
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#DeleteUsers.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='DeleteUsers') Delete Users
+    br
+    .row.container
+      .col-sm-4.col-4.col-md-4
+        .custom-control.custom-checkbox
+          input#Transfer.custom-control-input(type='checkbox' name='example1')
+          label.custom-control-label(for='Transfer') Transfer Ownership
+  
+  br
+
+  .d-flex.justify-content-center
+    input.btn.btn-lg.btn-outline-primary.btn-sm.w-50(type='submit' value='Submit')

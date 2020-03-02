@@ -14,17 +14,16 @@
               .login-or
                 span.span-or OR
                 hr.hr-or
-          form(action='' method='post' name='login')
-            .form-group
-            input#fname.form-control(#fname type='text' name='fname' aria-describedby='fname' placeholder='First name*')
-            .form-group
-            input#lname.form-control(#lname type='text' name='lname' aria-describedby='lname' placeholder='last name*')
-            .form-group
-            input#email.form-control(#email type='email' name='email' aria-describedby='emailHelp' placeholder='Email*')
-            .form-group
-            input#password.form-control(#password type='password' name='password' aria-describedby='emailHelp' placeholder='Password*')
-            .form-group
-
+          .form-group
+          input#fname.form-control(#fname type='text' name='fname' aria-describedby='fname' placeholder='First name*')
+          .form-group
+          input#lname.form-control(#lname type='text' name='lname' aria-describedby='lname' placeholder='last name*')
+          .form-group
+          input#email.form-control(#email type='email' name='email' aria-describedby='emailHelp' placeholder='Email*')
+          .form-group
+          input#password.form-control(#password type='password' name='password' aria-describedby='emailHelp' placeholder='Password*')
+          .form-group
+            br
             h6.text-danger {{error}}
 
             .col-md-12.text-center

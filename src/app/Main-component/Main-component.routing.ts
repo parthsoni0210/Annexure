@@ -5,6 +5,8 @@ import { AccountSetUpComponent } from '../account-set-up/account-set-up.componen
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { AccountVerficationComponent } from '../Account-verfication/Account-verfication.component';
 import { BackendAccountVerificationComponent } from '../backend-account-verification/backend-account-verification.component';
+import { AddUserComponent } from '../add-user/add-user.component';
+import { UserDetailsComponent } from '../user-details/user-details.component';
 
 const routes: Routes = [
   { path: '', component:LoginComponent },
@@ -12,7 +14,9 @@ const routes: Routes = [
   { path: 'dashboard', component:DashboardComponent },
   {path:'AccountSetUp',component:AccountSetUpComponent},
   {path:'AccountVerfication',component:AccountVerficationComponent},
-  {path:'BackendAccountVerfication',component:BackendAccountVerificationComponent}
+  {path:'BackendAccountVerfication',component:BackendAccountVerificationComponent},
+  {path:'userManagement',component:AddUserComponent},
+  {path:'userDetails',component:UserDetailsComponent}
 ];
 
 @NgModule({

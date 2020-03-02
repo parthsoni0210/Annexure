@@ -12,13 +12,18 @@ export class LoginComponent implements OnInit {
   @ViewChild("fname", { static: true }) fname: ElementRef;
   @ViewChild("lname", { static: true }) lname: ElementRef;
   @ViewChild("password", { static: true }) password: ElementRef;
-  error:string="";
+  error: string = "";
+  flag: boolean = true;
   constructor(public router: Router) {}
 
   ngOnInit() {
-    if(localStorage.getItem("email")){
-      this.router.navigate(['/dashboard']);
+    if (localStorage.getItem("email")) {
+      this.router.navigate(["/dashboard"]);
     }
+  }
+
+  changeFlag() {
+    this.flag = !this.flag;
   }
 
   onJoin() {
@@ -28,13 +33,15 @@ export class LoginComponent implements OnInit {
       this.lname.nativeElement.value &&
       this.password.nativeElement.value
     ) {
-      this.error="";
+      this.error = "";
       localStorage.setItem("email", this.email.nativeElement.value);
-      localStorage.setItem("userName", this.fname.nativeElement.value+' '+this.lname.nativeElement.value);
+      localStorage.setItem(
+        "userName",
+        this.fname.nativeElement.value + " " + this.lname.nativeElement.value
+      );
       this.router.navigate([""]);
     } else {
-      this.error="All fields are mandatory";
-      this.ngOnInit();
+      this.error = "All fields are mandatory";
     }
   }
 }

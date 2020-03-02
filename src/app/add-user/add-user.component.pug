@@ -1,0 +1,41 @@
+.jumbotron.text-uppercase(style="background-color: #214264;color:white")
+    .mx-2 User Managerment
+        i.fa.fa-chevron-circle-left(style="font-size:25px;float:right" routerLink="/")
+.container
+  .mt-5
+    h4 My Pedding Approvals
+    table.table.table-striped
+      thead
+        tr.table-info
+          th(scope='col') Name
+          th(scope='col') -
+      tbody
+        tr
+          td(scope='row')
+            | MIKE TAYLOR
+          td(routerLink="/userDetails") View
+  .mt-5
+    h4 Approved Users
+    .table-responsive-md
+      table.table.table-striped.table-hover
+        thead
+          tr.table-info
+            th(scope='col') Name
+            th(scope='col') -
+        tbody
+          tr
+            td.span3
+              | MIKE TAYLOR
+            td.span3(routerLink="/userDetails") View
+          tr
+            td
+              | MIKE TAYLOR
+            td(routerLink="/userDetails") View
+          tr
+            td
+              | MIKE TAYLOR
+            td(routerLink="/userDetails") View
+          tr
+            td
+              | MIKE TAYLOR
+            td(routerLink="/userDetails") View

@@ -8,6 +8,8 @@ import { MainRoutingModule } from './Main-component.routing';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { AccountVerficationComponent } from '../Account-verfication/Account-verfication.component';
 import { BackendAccountVerificationComponent } from '../backend-account-verification/backend-account-verification.component';
+import { AddUserComponent } from '../add-user/add-user.component';
+import { UserDetailsComponent } from '../user-details/user-details.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { BackendAccountVerificationComponent } from '../backend-account-verifica
       AccountSetUpComponent,
       DashboardComponent,
       AccountVerficationComponent,
-      BackendAccountVerificationComponent
+      BackendAccountVerificationComponent,
+      AddUserComponent,
+      UserDetailsComponent
    ],
    imports: [
       MainRoutingModule

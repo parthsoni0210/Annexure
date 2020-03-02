@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./Main-component.component.css"]
 })
 export class MainComponentComponent implements OnInit {
-  public isLogged:boolean = true;
+  public isLogged:boolean = false;
   constructor(public router: Router) {
   }
 
